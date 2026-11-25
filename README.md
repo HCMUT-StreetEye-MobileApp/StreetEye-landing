@@ -1,12 +1,6 @@
 # StreetEye
 
-Landing page giới thiệu bản mẫu StreetEye cho người đi xe máy. Mở `index.html` để xem trên máy. Trang dùng HTML, CSS và tài nguyên trong `assets/`.
-
-## Cập nhật trang
-
-- Sửa nội dung, liên kết Figma và Behance trong `index.html`. Sửa bố cục trong `styles.css`.
-- Khi thiết kế thay đổi, xuất lại các màn hình từ Figma và cập nhật cả mô tả ảnh trong HTML.
-- GitHub Pages dùng nhánh `main`, thư mục `/ (root)`. Trong repository, mục **Settings → Pages** hiển thị đường dẫn công khai và trạng thái triển khai.
+Landing page giới thiệu bản mẫu StreetEye cho người dùng. Mở `index.html` để xem trên máy. Trang dùng HTML, CSS và tài nguyên trong `assets/`.
 
 ## Nguồn và công cụ
 
