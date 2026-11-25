@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1d4ed8">
+  <meta name="description" content="StreetEye giúp người đi xe máy xem trước điểm nguy hiểm, nhận ra ngã rẽ và chia sẻ tình trạng mặt đường. Khám phá bản mẫu tương tác của nhóm.">
+  <title>StreetEye · Thấy trước đường xấu – đi an tâm hơn</title>
+  <link rel="icon" href="./assets/mark.png" type="image/png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body id="dau-trang">
+  <a class="skip" href="#noi-dung">Đến nội dung chính</a>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="#dau-trang" aria-label="StreetEye – đầu trang"><img src="./assets/brand.png" alt="StreetEye" width="196" height="44"></a>
+      <nav aria-label="Điều hướng chính">
+        <a href="#hanh-trinh">Tính năng</a>
+        <a href="#thiet-ke">Thiết kế</a>
+        <a class="nav-proto" href="https://www.figma.com/proto/skGtZoREBpTuVq56LU25aM/StreetEye-UI-draft?page-id=0%3A1&amp;node-id=17-1410&amp;starting-point-node-id=17%3A1410">Mở prototype <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="noi-dung">
+    <section class="wrap hero" aria-labelledby="slogan">
+      <div class="hero-text">
+        <p class="status"><i aria-hidden="true"></i> Bản mẫu tương tác · v0.3</p>
+        <h1 id="slogan">Thấy trước<br>đường xấu<span class="sr"> – </span><span class="accent">đi an tâm hơn<span class="dot">.</span></span></h1>
+        <p class="intro">Ổ gà, đoạn ngập hay một ngã rẽ khó thấy có thể khiến bạn trở tay không kịp. StreetEye giúp người đi xe máy xem trước mặt đường và nghe cảnh báo khi đến gần.</p>
+        <div class="actions">
+          <a class="button primary" href="https://www.figma.com/proto/skGtZoREBpTuVq56LU25aM/StreetEye-UI-draft?page-id=0%3A1&amp;node-id=17-1410&amp;starting-point-node-id=17%3A1410">Thử chuyến đi <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="https://www.behance.net/gallery/258960639/StreetEye">Xem case study <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <figure class="hero-stage">
+        <div class="stage-map" aria-hidden="true"></div>
+        <div class="beacon" aria-hidden="true"><i></i></div>
+        <div class="device hero-device"><img src="./assets/navigation.png" alt="Màn hình dẫn đường chỉ chỗ rẽ bằng ảnh cây xăng và báo ổ gà cách 80 mét." width="390" height="844"></div>
+        <figcaption><span class="locator" aria-hidden="true">⌖</span> <span>Tuyến minh họa<strong>Quận 10, TP.HCM</strong></span></figcaption>
+      </figure>
+    </section>
+
+    <section class="journey" id="hanh-trinh" aria-labelledby="journey-title">
+      <div class="wrap">
+        <h2 id="journey-title">StreetEye trong một chuyến đi</h2>
+        <p class="section-intro">Chọn từng chặng để xem giao diện trên tuyến minh họa đến Đại học Bách khoa, Cơ sở 1.</p>
+        <div class="walkthrough">
+          <fieldset class="choices">
+            <legend class="sr">Chọn màn hình minh họa</legend>
+            <label class="choice">
+              <input type="radio" name="chang" id="chuan-bi" checked>
+              <span class="choice-text"><span class="phase">Trước khi đi</span><strong>Chọn tuyến, xem điểm nguy hiểm</strong><span>So sánh quãng đường và các điểm đã được ghi nhận. Bạn có thể chọn tuyến dài hơn một chút để tránh đoạn ngập.</span></span>
+            </label>
+            <label class="choice">
+              <input type="radio" name="chang" id="bao-nhanh">
+              <span class="choice-text"><span class="phase">Trên đường</span><strong>Báo nhanh tình trạng mặt đường</strong><span>Chọn ổ gà, ngập nước hoặc công trình. StreetEye gắn vị trí vào báo cáo để những người đi sau có thêm thông tin.</span></span>
+            </label>
+            <label class="choice">
+              <input type="radio" name="chang" id="xem-lai">
+              <span class="choice-text"><span class="phase">Sau chuyến đi</span><strong>Xem lại những lần xe xóc</strong><span>Khi đã dừng xe, bạn có thể xác nhận một cú xóc là ổ gà, bỏ qua ghi nhận sai hoặc bổ sung ảnh.</span></span>
+            </label>
+          </fieldset>
+          <div class="preview">
+            <figure class="screen route"><img loading="lazy" src="./assets/route.png" alt="Màn hình xem trước tuyến 15 phút với ba điểm nguy hiểm và một tuyến thay thế 17 phút." width="390" height="844"><figcaption>Xem trước tuyến</figcaption></figure>
+            <figure class="screen flag"><img loading="lazy" src="./assets/flag.png" alt="Màn hình báo nhanh với các lựa chọn ổ gà, ngập nước, công trình và loại khác." width="390" height="844"><figcaption>Báo nhanh</figcaption></figure>
+            <figure class="screen review"><img loading="lazy" src="./assets/review.png" alt="Màn hình xem lại chuyến đi với danh sách các lần xóc để xác nhận hoặc bỏ qua." width="390" height="844"><figcaption>Xem lại chuyến đi</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap design" id="thiet-ke" aria-labelledby="design-title">
+      <div>
+        <p class="overline">Quá trình thiết kế</p>
+        <h2 id="design-title">Khi các ghim che nhau trên bản đồ</h2>
+        <p>Trong lần thử đầu với ba người tham gia, một người cho biết các ghim lớn, nằm sát nhau nên khó đọc. Nhóm đã gom các điểm gần nhau khi thu nhỏ bản đồ và cho phép phóng to để xem từng điểm.</p>
+        <a class="text-link" href="https://www.behance.net/gallery/258960639/StreetEye">Đọc case study trên Behance <span aria-hidden="true">↗</span></a>
+      </div>
+      <aside class="release" aria-labelledby="release-title">
+        <span class="release-icon" aria-hidden="true">⌖</span>
+        <h3 id="release-title">Hiện đang ở giai đoạn prototype</h3>
+        <p>Bản Figma dùng dữ liệu minh họa tại Quận 10 và ĐHQG TP.HCM. Bạn có thể thử cả chuyến đi và bước xác nhận sau khi đến nơi.</p>
+        <a class="text-link" href="https://www.figma.com/proto/skGtZoREBpTuVq56LU25aM/StreetEye-UI-draft?page-id=0%3A1&amp;node-id=7-572&amp;starting-point-node-id=7%3A572">Thử xem lại chuyến đi <span aria-hidden="true">↗</span></a>
+      </aside>
+    </section>
+  </main>
+  <footer><div class="wrap foot"><img src="./assets/brand.png" alt="StreetEye" width="196" height="44"><span>Dự án môn Phát triển ứng dụng di động · HCMUT</span><a href="#dau-trang">Lên đầu trang <span aria-hidden="true">↑</span></a></div></footer>
+</body>
+</html>
